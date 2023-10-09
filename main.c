@@ -1,12 +1,10 @@
 #include <stdio.h>
 #include <math.h>
 
-void cube() {
-    printf("You chose cube\n");
+void cubicCalcul() {
     int choice = 0;
-    float length = 0;
-    float perimeter = 0;
-    float area = 0;
+    float length, perimeter, area = 0;
+    printf("You chose cube\n");
     printf("Choose your calculation:\n");
     printf("1. Perimeter\n");
     printf("2. Area\n");
@@ -28,11 +26,9 @@ void cube() {
     }
 }
 
-void cercle() {
+void circleCalcul() {
     int choice = 0;
-    float radius = 0;
-    float area = 0;
-    float perimeter = 0;
+    float radius, area, perimeter = 0;
     float pi = 3.141593;
     printf("You chose sphere\n");
     printf("Choose your calculation:\n");
@@ -56,12 +52,8 @@ void cercle() {
     }
 }
 
-void rectangle() {
-    int choice = 0;
-    int length = 0;
-    int width = 0;
-    int perimeter = 0;
-    int area = 0;
+void rectangularCalcul() {
+    int choice, length, width, perimeter, area = 0;
     printf("You chose rectangle\n");
     printf("Choose your calculation:\n");
     printf("1. Perimeter\n");
@@ -99,13 +91,13 @@ int main() {
     scanf("%d", &choice);
     switch (choice) {
         case 1:
-            cube();
+            cubicCalcul();
             break;
         case 2:
-            cercle();
+            circleCalcul();
             break;
         case 3:
-            rectangle();
+            rectangularCalcul();
             break;
         case 4:
             printf("Bye bye\n");
